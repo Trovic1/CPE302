@@ -302,6 +302,7 @@ Full example: [`examples/06_classes.cpp`](examples/06_classes.cpp)
 ---
 
 ### Quick reference
-- Every program needs `#include <iostream>` and (for text) `#include <string>`, plus `using namespace std;`.
-- `main()` must `return 0;` on success.
+- Include only the headers your program uses, such as `#include <iostream>` for input/output and `#include <string>` for `string`.
+- `using namespace std;` is optional; it brings every name in `std` into the current scope and can cause naming conflicts in larger programs. You can write `std::cout`, `std::cin`, and `std::string` instead.
+- Reaching the end of `main()` is the same as `return 0;`. Returning `0` explicitly is still useful because it clearly tells the operating system that the program succeeded; non-zero return values signal failure or another status to scripts and larger programs.
 - `cout <<` prints; `cin >>` reads input; `endl` (or `"\n"`) starts a new line.
