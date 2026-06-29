@@ -1,0 +1,8 @@
+# Compiled binaries / build output
+hello
+hello.exe
+demo
+demo.exe
+*.o
+*.out
+*.exe
